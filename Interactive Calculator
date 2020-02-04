@@ -1,28 +1,90 @@
 def setup():
     size(420, 800)
-    textSize(60)
+
 def draw():
 
 #Display
+    
+    fill(255, 255, 255)
     rect(40, 100, 340, 80)
 
 #First row of numbers
+    
     rect(40, 300, 80, 80)
     rect(170, 300, 80, 80)
     rect(300, 300, 80, 80)
     
 #Second row of numbers
+    
     rect(40, 450, 80, 80)
     rect(170, 450, 80, 80)
     rect(300, 450, 80, 80)
     
 #Third row of numbers    
+  
     rect(40, 600, 80, 80)
     rect(170, 600, 80, 80)
     rect(300, 600, 80, 80)
 #Options
+   
     rect(35, 730, 80, 30)
     rect(125, 730, 80, 30)
     rect(215, 730, 80, 30)
     rect(305, 730, 80, 30)
+#Text
+   
+    textSize(60)
+    fill(0, 0 ,0)
+    text('1',61 , 360)
+    text('2',193 , 360)
+    text('3',322 , 360)
+    text('4',61 , 512)
+    text('5',193 , 512)
+    text('6',322 , 512)
+    text('7',61 , 663)
+    text('8',193 , 663)
+    text('9',322 , 663)
+    textSize(20)
+    text('+', 67, 750)
+    text('-', 159.5, 750)
+    text('x', 250, 750)
+    text('/', 340, 750)
+    text('Please Select The Operation', 75, 150)
+#Actual Garbage
 
+def divide(x, y):
+
+    return x / y
+
+def add(x, y):
+
+    return x + y
+
+def subtract(x, y):
+
+    return x - y
+
+def multiply(x, y):
+
+    return x * y
+
+def keyPressed():
+
+    fill(0, 0 , 0)
+
+    if key == '+':
+        
+        x = add
+    
+    if key == '-':
+    
+        x = subtract
+ 
+    if key == '/':
+
+        x = divide
+
+    if key == '*':
+        
+        x = multiply
+        
